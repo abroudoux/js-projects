@@ -1,0 +1,37 @@
+{
+    "projects": [
+        {
+            "name": "Calculator",
+            "description": "A powerful calculator with a minimalist design.",
+            "date": "03.2023",
+            "link": "calculator/calculator.html",
+            "langages": {
+                "html": "<i class='fa-brands fa-html5'></i>",
+                "sass": "<i class='fa-brands fa-sass'></i>",
+                "js": "<i class='fa-brands fa-js'></i>"
+            }
+        },
+        {
+            "name": "Tic Tac Toe",
+            "description": "A fun game to do with your friend.",
+            "date": "03.2023",
+            "link": "tic_tac_toe/tic_tac_toe.html",
+            "langages": {
+                "html": "<i class='fa-brands fa-html5'></i>",
+                "sass": "<i class='fa-brands fa-sass'></i>",
+                "js": "<i class='fa-brands fa-js'></i>"
+            }
+        },
+        {
+            "name": "ISS Position",
+            "description": "Want to know where's the ISS rn ?",
+            "date": "03.2023",
+            "link": "iss_position/iss_postion.html",
+            "langages": {
+                "html": "<i class='fa-brands fa-html5'></i>",
+                "sass": "<i class='fa-brands fa-sass'></i>",
+                "js": "<i class='fa-brands fa-js'></i>"
+            }
+        }
+    ]
+}

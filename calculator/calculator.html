@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Calculator | Arthur Broudoux
+    </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../calculator/calculator.css">
+    <link rel="stylesheet" href="../global_style/global_project.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">   
+
+    <script defer src="../calculator/calculator.js"></script>
+
+</head>
+
+
+<body>  
+
+    <header>
+
+        <div id="title">
+
+            <h1>
+                Calculator
+            </h1>
+
+            <p>
+                A powerful calculator with a minimalist design.
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <div class="separation"></div>
+
+        <section id="calculator">
+            
+            <input type="text" id="result" class="screen" placeholder="0">
+
+            <button class="symbol" onclick="wipe()">AC</button>
+            <button class="symbol" onclick="wipe()">C</button>
+            <button class="symbol" onclick="show(' / ')">/</button>
+            <button class="symbol" onclick="show('x')">*</button>
+
+            <button class="number" onclick="show('7')">7</button>
+            <button class="number" onclick="show('8')">8</button>
+            <button class="number" onclick="show('9')">9</button>
+            <button class="symbol" onclick="show('-')">-</button>
+
+            <button class="number" onclick="show('4')">4</button>
+            <button class="number" onclick="show('5')">5</button>
+            <button class="number" onclick="show('6')">6</button>
+            <button class="symbol" onclick="show('+')">+</button>
+
+            <button class="number" onclick="show('1')">1</button>
+            <button class="number" onclick="show('2')">2</button>
+            <button class="number" onclick="show('3')">3</button>
+            <button class="symbol" onclick="show('.')">.</button>
+
+            <button class="number" onclick="show('(')">(</button>
+            <button class="number" onclick="show('0')">0</button>
+            <button class="number" onclick="show(')')">)</button>
+            <button class="symbol" onclick="calc('=')">=</button>
+
+        </section>
+
+        <div class="separation"></div>
+
+        <div id="link">
+
+            <h2>
+                Wanna see others (amazing) projects ?
+            </h2>
+
+            <p>
+                Go back to the homepage to discover more
+            </p>
+
+
+            <button class="btn-action">
+
+                <a href="../index.html">
+                    Projects
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </button>
+
+        </div>
+
+    </main>
+
+</body>
+
+
+</html>

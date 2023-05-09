@@ -1,0 +1,272 @@
+// Imports 
+
+    @import "./global_style/global.scss";
+
+//
+
+
+// Home
+
+    header {
+
+        #title {
+            margin: 5vh 0;
+        }
+
+        h1 {
+            color: $green;
+            text-align: center;
+            padding: 3vh 0;
+            animation: apparition 1.5s ease-in-out;
+        }
+
+        p {
+            color: $white;
+            text-align: center;
+            margin-bottom: 5vh;
+            animation: apparition 2s ease-in-out;
+        }
+
+        #btn_actions {
+
+            display: flex;
+            justify-content: center;
+            animation: chargement 3s ease-in-out;
+        
+            button {
+                margin: 1vh 1vw;
+            }
+            
+        }
+
+    }
+
+    #library {
+
+        width: 100%;
+        background-color: $black;
+        display: flex;
+        flex-direction: column;
+        margin: 10vh auto;
+
+        #title_library {
+
+            width: 60%;
+            margin: 5vh auto;
+            animation: chargement 3s ease-in-out;
+            color: $green;
+
+        }
+
+        #cards {
+
+            display: grid;
+            width: 100%;
+            margin: 3vh auto;
+            grid-template-columns: repeat(auto-fit, 600px);
+            grid-gap: 4vh 2vw;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .card {
+
+                background-color: $darkGrey;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                width: 600px;
+                height: 500px;
+
+                .card-infos {
+                    display: flex;
+                }
+
+                .card-img {
+                    width: 50%;
+                    height: 90%;
+                    margin: 20px;
+                    border-radius: 10px;
+                    justify-content: flex-start;
+                }
+
+                .card-txt {
+
+                    width: 40%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    flex-direction: column;
+
+                    h3 {
+                        color: $green;
+                        font-size: 1rem;
+                    
+                            &:hover {
+                                color: lighten($green, 10);
+                                cursor: pointer;
+                            }
+                    }
+                        
+                    p {
+                        color: $grey;
+                        
+                        i {
+                            transform: scale(1.5);
+                            margin: 0 1vw 0 0;
+                        
+                                &:hover {
+                                    color: $white;
+                                    transition: .5s ease-in-out;
+                                }
+                        }
+                        
+                    } 
+
+                }
+
+            }    
+        }
+    }
+
+    footer {
+
+        margin: 10vh auto;
+        text-align: center;
+
+        #github_txt {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        h2 {
+            color: $green;
+        }
+
+        #btn-github {
+            @extend .btn-action;
+
+            margin: 10vh auto;
+
+            i:hover {
+                transform: translateX(0);
+            }
+        }
+
+    }
+
+    #link {
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        padding: 10vh 5vw;
+
+
+        h2 {
+            color: $green;
+            margin: 5vh 0 0;
+            text-align: center;
+            animation: apparition 1.5s ease-in-out;
+        }
+
+        p {
+            color: $white;
+            margin: 3vh 0 5vh;
+            text-align: center;
+            animation: apparition 2s ease-in-out;
+        }
+
+        button {
+            text-align: center;
+            margin: 3vh 46vw 5vh;
+            animation: chargement 2s ease-in-out;
+        }
+
+    }
+
+//
+
+
+// Responsive 
+
+    @media #{$responsive} {
+
+        header {
+
+            #title {
+                margin: 10vh 0;
+            }
+        
+            p {
+                color: $white;
+                padding: 0 10vw;
+            }
+        
+        }
+
+        #library {
+
+            #title_library {
+        
+                width: 100%;
+                text-align: center;
+                animation: chargement 3s ease-in-out;
+        
+            }
+        
+            #cards {
+        
+                margin: 3vh auto;
+                grid-gap: 4vh 0;
+                justify-content: center;
+        
+                .card {
+        
+                    flex-direction: column;
+                    width: 70%;
+                    height: 100%;
+                    margin: 0 auto;
+        
+                    .card-infos {
+                        display: flex;
+                        flex-direction: column;
+                    }
+        
+                    .card-img {
+                        width: 40%;
+                        height: 100%;
+                        margin: 5Vh auto 0;
+                        justify-content: center;
+                    }
+        
+                    .card-txt {
+        
+                        width: 70%;
+                        margin: 1vh auto;
+                        text-align: center;
+                        justify-content: space-between;
+        
+                        h3 {
+                            font-size: 1.5rem;
+                        }
+                            
+                        p {
+
+                            i {
+                                margin: 0 2vw;
+                            }
+                            
+                        } 
+        
+                    }
+        
+                }    
+            }
+        }
+
+    }
+
+//
